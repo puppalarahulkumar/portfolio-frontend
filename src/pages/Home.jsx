@@ -12,16 +12,17 @@ const Home = () => {
   const [community, setCommunity] = useState(null);
   const [contact, setContact] = useState(null);
   const [projects, setProjects] = useState([]); // new
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const [heroRes, aboutRes, communityRes, contactRes, projectsRes] = await Promise.all([
-          fetch("/api/hero/1/").then(res => res.json()),
-          fetch("/api/about/1/").then(res => res.json()),
-          fetch("/api/community/1/").then(res => res.json()),
-          fetch("/api/contact/1/").then(res => res.json()),
-          fetch("/api/projects/").then(res => res.json()) // fetch projects
+          fetch(`${API_BASE_URL}/api/hero/1/`).then(res => res.json()),
+          fetch(`${API_BASE_URL}/api/about/1/`).then(res => res.json()),
+          fetch(`${API_BASE_URL}/api/community/1/`).then(res => res.json()),
+          fetch(`${API_BASE_URL}/api/contact/1/`).then(res => res.json()),
+          fetch(`${API_BASE_URL}/api/projects/`).then(res => res.json()) // fetch projects
         ]);
 
         setHero(heroRes);

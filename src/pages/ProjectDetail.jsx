@@ -5,11 +5,11 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
-
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        const response = await fetch(`/api/projects/${id}`);
+        const response = await fetch(`${API_BASE_URL}/api/projects/${id}`);
         const data = await response.json();
         setProject(data);
       } catch (error) {
