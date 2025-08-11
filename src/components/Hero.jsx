@@ -31,12 +31,10 @@ const Hero = ({ data }) => {
         <div className="flex flex-wrap gap-4 mt-6">
   {/* Resume Button */}
   <a
-    href="https://docs.google.com/document/d/1v6WVqH6a8dEctW7untNwruHguewo5FFe/edit?usp=sharing&ouid=111171405243668205871&rtpof=true&sd=true" // replace with your actual link
-    target="_blank"
-    rel="noopener noreferrer"
+    href="#contact" // replace with your actual link
     className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl shadow-md transition"
   >
-    📄 Contact Me
+   💬 Contact Me
   </a>
 
   {/* Community Button */}
@@ -44,7 +42,7 @@ const Hero = ({ data }) => {
     href="#community"
     className="bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-2 px-6 rounded-xl shadow-md transition"
   >
-    💬 Join Community
+    👥 Join Community
   </a>
 </div>
 

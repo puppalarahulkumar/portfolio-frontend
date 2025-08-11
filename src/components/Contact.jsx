@@ -5,7 +5,7 @@ const Contact = ({ data }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 md:px-12 lg:px-24 font-sans">
+    <section  id="contact" className="bg-white py-16 px-4 sm:px-6 md:px-12 lg:px-24 font-sans">
       <div className="max-w-6xl mx-auto space-y-14">
 
         {/* Section Title */}
