@@ -36,7 +36,7 @@ const Hero = ({ data }) => {
     rel="noopener noreferrer"
     className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl shadow-md transition"
   >
-    📄 View Resume
+    📄 Contact Me
   </a>
 
   {/* Community Button */}
